@@ -1,0 +1,16 @@
+.home {
+    &__container{
+        margin-top: 10rem;
+        row-gap: 4rem;
+    }
+    &__title{
+        font-size: var(--h1-font-size);
+        font-weight: var(--font-weight-bold);
+        color: var(--primary-color);
+        margin-bottom: 2rem;
+    }
+    &__desc{
+        margin-bottom: 2rem;
+        
+    }
+}

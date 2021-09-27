@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    background-color: var(--secondary-color);
+
+    &__cotainer {
+        gap: 2.5rem;
+    }
+    &__title {
+        margin-bottom: 2rem;
+    }
+    &__link {
+        line-height: 4rem;
+        color: var(--text-color);
+    }
+    &__socials {
+        display: flex;
+        font-size: 3rem;
+        column-gap: 2rem;
+      & a{
+            color: var(--primary-color);
+      }
+    }
+    &__coppyright{
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}

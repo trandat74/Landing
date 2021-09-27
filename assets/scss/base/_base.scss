@@ -1,0 +1,98 @@
+/*---------------GOOGLE FONTS----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap");
+/*---------------VARIABLES CSS----------------*/
+:root {
+    --header-height: 3rem;
+    /*----------------Color--------------------*/
+    --primary-color: #0853c4;
+    --secondary-color: #d7e9ff;
+    --title-color: #0853c4;
+    --text-color: #5e5e5e;
+    --body-color: #ffffff;
+    --container-color: #ffffff;
+    /*---------Font and typography------------*/
+    --h1-font-size: 3rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.8rem;
+    --normal-font-size: 1.4rem;
+    --font-weight-bold: 600;
+    --font-weight-normal:400;
+    --body-font: "Rubik", sans-serif;
+    /*--------------Z-index-------------------*/
+    --z-tool: 10;
+    --z-fixed: 100;
+}
+
+/*------------- BASE--------------------*/
+
+* {
+    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+    // font-size: 62.5%;
+    font-size: 50%;
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.6rem;
+    margin-top: var(--header-height);
+    font-family: var(--body-font); 
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    color: var(--title-color);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*-----------Repeat component---------------*/
+.section {
+    padding: 5rem 0 1rem;
+    &__title,
+    &__title-center {
+        font-size: var(--h2-font-size);
+        color: var(--title-color);
+        text-align: center;
+        margin-bottom: 2rem;
+       
+    }
+}
+.svg {
+    &__color {
+        fill: var(--primary-color);
+    }
+    &__blob {
+        fill: var(--primary-color);
+    }
+    &__img {
+        width: 300px;
+        justify-self: center;
+    }
+}
+.container {
+    max-width: 968px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+.grid {
+    display: grid;
+    gap: 2rem;
+}

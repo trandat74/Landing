@@ -1,0 +1,43 @@
+.button{
+    display: inline-block;
+    max-width: max-content;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem 2rem; 
+    border-radius: 1rem;
+    font-weight: var(--font-weight-bold);
+    transition: 0.3s;
+    height: max-content;
+
+    &:hover{
+        filter: brightness(1.2);
+    }
+    &__header{
+        display:  none;
+    }
+    &__flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    &__icon{
+        font-size: 3rem;
+    }
+    &__scroll{
+        display: block;
+        position: fixed;
+        right: 2rem;
+        bottom: -20%;
+        font-size: 2rem;
+        padding: 1.5rem 1.5rem;
+        cursor: pointer;
+        &:hover{
+            filter: brightness(1.6);
+        }
+        transition:  0.4s;
+    }
+    &__scroll-top{
+        bottom: 4rem;
+    }
+}
